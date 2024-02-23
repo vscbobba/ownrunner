@@ -20,8 +20,8 @@ jobs:
           cli_config_credentials_secret: ${{ secrets.YOUR_AWS_SECRET_ACCESS_KEY }}
           cli_config_credentials_provider: env
           backend_config_key: terraform.tfstate
-          backend_config_bucket: your-terraform-state-bucket
-          backend_config_region: your-aws-region
+          backend_config_bucket: terraform-project-1-2023
+          backend_config_region: us-east-1
 
       - name: Terraform Init
         run: terraform init
